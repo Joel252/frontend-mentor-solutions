@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+  --color-primary: hsl(25, 97%, 53%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsla(216, 12%, 54%, 0.16);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--Very-Dark-Blue);
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.container {
+  max-width: 350px;
+}
+.card {
+  background-color: var(--Dark-Blue);
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.card__icon {
+  width: 14%;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--Medium-Grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__icon img {
+  width: 40%;
+}
+.card__text p {
+  color: var(--Light-Grey);
+  line-height: 24px;
+  padding-top: 16px;
+}
+.card__ratings {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card__ratings--rating {
+  background-color: var(--Medium-Grey);
+  width: 14%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--Light-Grey);
+  cursor: pointer;
+}
+.card__ratings--rating:hover {
+    background-color: var(--color-primary);
+    color: white;
+}
+.card button {
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  background-color: var(--color-primary);
+  font-family: "Overpass", sans-serif;
+  letter-spacing: 0.08em;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.card button:hover {
+    color: var(--color-primary);
+    background-color: white;
+}
+.card__img-content {
+  margin: 8px auto 0px;
+}
+.card__rating {
+  display: flex;
+  justify-content: center;
+}
+.card__rating p {
+  background-color: var(--Medium-Grey);
+  border-radius: 20px;
+  padding: 8px 16px;
+  color: var(--color-primary);
+}
+.card__text--center {
+  text-align: center;
+}
+.display-none {
+  display: none;
+}
