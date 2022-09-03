@@ -68,8 +68,12 @@ body {
   cursor: pointer;
 }
 .card__ratings--rating:hover {
-    background-color: var(--color-primary);
-    color: white;
+  background-color: var(--color-primary);
+  color: white;
+}
+.selected {
+  background-color: var(--Light-Grey);
+  color: white;
 }
 .card button {
   width: 100%;
@@ -83,8 +87,8 @@ body {
   cursor: pointer;
 }
 .card button:hover {
-    color: var(--color-primary);
-    background-color: white;
+  color: var(--color-primary);
+  background-color: white;
 }
 .card__img-content {
   margin: 8px auto 0px;
@@ -102,6 +106,6 @@ body {
 .card__text--center {
   text-align: center;
 }
-.display-none {
+#container-msj {
   display: none;
 }
