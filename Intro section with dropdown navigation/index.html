@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="#" aria-label="snap home page">
+        <img src="images/logo.svg" alt="snap logo" />
+      </a>
+      <a class="menu" href="#" aria-label="icon to expand the menu">
+        <img src="images/icon-menu.svg" alt="open menu" />
+      </a>
+      <div class="overlay" style="display: none">
+        <nav class="navmovile">
+          <img src="#images/icon-close-menu.svg" alt="close menu" />
+          <ul>
+            <li>
+              <a href="#" aria-label="features content">
+                Features
+                <img src="images/icon-arrow-down.svg" alt="collapse content" />
+              </a>
+              <ul>
+                <li>
+                  <a href="#" aria-label="todo list tab"
+                    ><img src="images/icon-todo.svg" alt="todo icon" />
+                    Todo List
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="calendar tab">
+                    <img src="images/icon-calendar.svg" alt="calendar icon" />
+                    Calendar
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="reminders tab">
+                    <img src="images/icon-reminders.svg" alt="reminders icon" />
+                    Reminders
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="planning tab">
+                    <img src="images/icon-planning.svg" alt="planning icon" />
+                    Planning
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" aria-label="company content">
+                Company
+                <img src="images/icon-arrow-down.svg" alt="collapse content" />
+              </a>
+              <ul>
+                <li><a href="#" aria-label="history tab">History</a></li>
+                <li><a href="#" aria-label="our team tab">Our team</a></li>
+                <li><a href="#" aria-label="blog tab">Blog</a></li>
+              </ul>
+            </li>
+            <li><a href="#" aria-label="careers tab"> Careers </a></li>
+            <li><a href="#" aria-label="about tab">About</a></li>
+          </ul>
+          <section class="buttons">
+            <button class="login">Login</button>
+            <button class="register">Register</button>
+          </section>
+        </nav>
+      </div>
+    </header>
+
+    <section class="banner" role="banner">
+      <img src="images/image-hero-mobile.png" alt="snap homepage banner" />
+    </section>
+
+    <main>
+      <h1>Make remote work</h1>
+
+      <article>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <a
+          href="#"
+          class="button"
+          aria-label="link to content about remote work"
+          role="button"
+          >Learn more</a
+        >
+      </article>
+
+      <section class="clients" aria-label="clients that validate the website">
+        <img src="images/client-databiz.svg" alt="logo from databiz" />
+        <img src="images/client-audiophile.svg" alt="logo from audiophile" />
+        <img src="images/client-meet.svg" alt="logo from meet" />
+        <img src="images/client-maker.svg" alt="logo from maker" />
+      </section>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        aria-label="link to Frontend Mentor"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://github.com/Joel252/Frontend-Mentor-Solutions/tree/master/Intro%20section%20with%20dropdown%20navigation"
+        aria-label="link to author repository"
+        >Joel Cruz</a
+      >.
+    </footer>
+  </body>
+</html>
