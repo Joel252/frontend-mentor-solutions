@@ -86,6 +86,8 @@ article .button:hover {
   width: 40vh;
   height: 100%;
   line-height: 2em;
+  display: flex;
+  flex-direction: column;
 }
 #close-menu {
   width: 100%;
@@ -131,6 +133,10 @@ article .button:hover {
 /* Styles to change hidden */
 .hidden {
   display: none;
+}
+.show {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Desktop nav styles */
