@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Card details form</h1>
+      <img class="bg-mobile" src="images/bg-main-mobile.png" />
+      <img class="bg-desktop" src="images/bg-main-desktop.png" />
+
+      <section class="card-container" aria-labelledby="card details view">
+        <div id="front-card" class="card card--front">
+          <img class="card__logo" src="images/card-logo.svg" />
+          <img src="images/bg-card-front.png" />
+          <p class="card__number">0000 0000 0000 0000</p>
+          <p class="card__owner">Jane Appleseed</p>
+          <p class="card__date">00/00</p>
+        </div>
+        <div id="back-card" class="card card--back">
+          <img src="images/bg-card-back.png" />
+          <p class="card__cvc">000</p>
+        </div>
+      </section>
+    </header>
+
+    <main class="main">
+      <form class="form" action="" method="" aria-labelledby="card detail">
+        <label for="card-name">Cardholder Name</label>
+        <input
+          type="text"
+          name="card-name"
+          id="card-name"
+          placeholder="e.g. Jane Appleseed"
+        />
+        <p
+          id="error-name"
+          class="form--error hidden"
+          aria-label="error message"
+        >
+          Can't be blank
+        </p>
+        <label for="card-number">Card Number</label>
+        <input
+          type="text"
+          name="card-number"
+          id="card-number"
+          placeholder="e.g. 1234 5678 9123 0000"
+        />
+        <p
+          id="error-number"
+          class="form--error hidden"
+          aria-label="error message"
+        >
+          Wrong format, numbers only
+        </p>
+        <section class="form--section" aria-label="exp input date and cvv">
+          <label for="">Exp. Date (MM/YY)</label>
+          <label for="card-cvv">cvc</label>
+          <input
+            type="number"
+            name="card-month"
+            id="card-month"
+            placeholder="MM"
+          />
+          <input
+            type="number"
+            name="card-year"
+            id="card-year"
+            placeholder="YY"
+          />
+          <input
+            type="text"
+            name="card-cvc"
+            id="card-cvc"
+            class="form--input-cvc"
+            placeholder="e.g. 123"
+          />
+          <p
+            id="error-date"
+            class="form--error hidden"
+            aria-label="error message"
+          >
+            Can't be blank
+          </p>
+          <p
+            id="error-cvc"
+            class="form--error hidden"
+            aria-label="error message"
+          >
+            Can't be blank
+          </p>
+        </section>
+        <input id="btn-confirm" class="button" type="submit" value="Confirm" />
+      </form>
+
+      <!-- Completed state start -->
+      <section class="completed-state hidden" aria-label="completed state">
+        <img
+          class="completed-state__img"
+          src="images/icon-complete.svg"
+          alt="complete"
+        />
+        <h2 class="completed-state__h2">Thank you!</h2>
+        <p class="completed-state__p">We've added your card details</p>
+        <input class="button" type="submit" value="Continue" />
+      </section>
+    </main>
+
+    <footer class="attribution" aria-label="author links">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        aria-label="author Fronted Mentor link"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://github.com/Joel252/Frontend-Mentor-Solutions/tree/master/Interactive%20card%20details%20form%20main"
+        aria-label="author repository link"
+        >Joel Cruz</a
+      >.
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

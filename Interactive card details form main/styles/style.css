@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+:root {
+  --Active-input-border: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+  --input-errors: hsl(0, 100%, 66%);
+  --Lightgrayish-violet: hsl(270, 3%, 87%);
+  --Darkgrayish-violet: hsl(279, 6%, 55%);
+  --Verydark-violet: hsl(278, 68%, 11%);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Header styles*/
+.header {
+  width: 100%;
+  height: 30vh;
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  position: absolute;
+  font-size: 1px;
+}
+.bg-mobile {
+  width: 100%;
+  height: 100%;
+}
+.bg-desktop {
+  display: none;
+}
+
+/* Card views styles*/
+.card-container {
+  position: absolute;
+  height: 32vh;
+  min-width: 320px;
+  min-height: 200px;
+  top: 3vh;
+}
+.card {
+  width: 80%;
+  height: 60%;
+  border-radius: 10px;
+  position: absolute;
+  color: white;
+  box-shadow: 5px 30px 30px #00000033;
+}
+.card--front {
+  bottom: 0;
+  z-index: 1;
+}
+.card--back {
+  top: 0;
+  right: 0;
+}
+.card__owner,
+.card__date,
+.card__cvc {
+  font-size: 0.7rem;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+}
+.card .card__logo {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  top: 1em;
+  left: 1em;
+}
+.card__cvc {
+  position: absolute;
+  right: 2.5em;
+  top: 44%;
+}
+.card__number {
+  position: absolute;
+  font-size: 0.9em;
+  bottom: 2.5em;
+  left: 2em;
+}
+.card__owner {
+  position: absolute;
+  left: 2.5em;
+  bottom: 1em;
+}
+.card__date {
+  position: absolute;
+  right: 2.5em;
+  bottom: 1em;
+}
+
+/* Form styles */
+.main {
+  width: 100%;
+  padding: 4em 1.5em 1em 1.5em;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+.form label {
+  padding: 1em 0;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--Verydark-violet);
+}
+.form input {
+  padding: 0.8em 1em;
+  font-weight: 600;
+  border: 1px solid var(--Lightgrayish-violet);
+  border-radius: 8px;
+  color: var(--Verydark-violet);
+}
+.form input::placeholder {
+  font-weight: 500;
+  color: var(--Lightgrayish-violet);
+  font-family: "Space Grotesk", sans-serif;
+}
+.form--section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+.form--section label {
+  margin-right: 4em;
+  padding: 1em 0 0 0;
+}
+.form--section input {
+  width: 13.5%;
+}
+.form .form--input-cvc {
+  width: 39%;
+}
+input.button {
+  background-color: var(--Verydark-violet);
+  font-weight: 500;
+  color: white;
+  padding: 1em;
+  margin-top: 2em;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--Lightgrayish-violet);
+}
+.form--error {
+  color: var(--input-errors);
+  font-size: 8px;
+  text-transform: none;
+  padding: 0.8em 0 0 1em;
+  font-weight: 600;
+}
+.form--section .form--error {
+  padding-right: 9em;
+}
+
+/* footer styles*/
+.attribution {
+  font-size: 8px;
+  text-transform: none;
+  width: 100%;
+}
+
+.completed-state {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* complete state styles */
+.completed-state__h2 {
+  font-weight: 500;
+  letter-spacing: 3px;
+  padding-top: 2em;
+}
+.completed-state__p {
+  color: var(--Lightgrayish-violet);
+  font-size: 0.8em;
+  padding-top: 1em;
+}
+
+/**/
+.hidden {
+  display: none;
+}
+
+/* Media queries*/
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20%;
+  }
+  .header {
+    width: 30%;
+    height: 98vh;
+  }
+  .main {
+    width: 50%;
+    padding: 0;
+  }
+  .bg-mobile {
+    display: none;
+  }
+  .bg-desktop {
+    width: 100%;
+    height: 100%;
+    display: inline;
+  }
+  .card-container {
+    min-width: 450px;
+    min-height: 450px;
+    top: 15vh;
+    left: 10%;
+  }
+  .card {
+    width: 70%;
+    height: 45%;
+  }
+  .card--front {
+    bottom: auto;
+  }
+  .card--back {
+    top: auto;
+    bottom: 0;
+  }
+  .card__cvc {
+    position: absolute;
+    right: 3em;
+    top: 8.2em;
+  }
+  .card__number {
+    position: absolute;
+    font-size: 1.1em;
+    bottom: 3.5em;
+    left: 2em;
+  }
+  .card__owner {
+    position: absolute;
+    left: 3em;
+    bottom: 2em;
+  }
+  .card__date {
+    position: absolute;
+    right: 3em;
+    bottom: 2em;
+  }
+}
