@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <title>Frontend Mentor | Fylo data storage component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Fylo data storage</h1>
+      <img class="logo" src="images/logo.svg" alt="fylo logo" />
+      <section class="options" aria-label="options">
+        <h2>Options</h2>
+        <div class="option" aria-label="files option">
+          <img src="images/icon-document.svg" alt="files option icon" />
+        </div>
+        <div class="option" aria-label="storage option">
+          <img src="images/icon-folder.svg" alt="storage option icon" />
+        </div>
+        <div class="option" aria-label="upload option">
+          <img src="images/icon-upload.svg" alt="upload option icon" />
+        </div>
+      </section>
+    </header>
+
+    <main class="main">
+      <h2>Storage state info</h2>
+      <p>You’ve used <b>815 GB</b> of your storage</p>
+      <div class="storage-bar" aria-label="storage used bar">
+        <div class="value-bar"></div>
+      </div>
+      <p class="values">0 GB<span>1000 GB</span></p>
+      <div class="storage-indicator" aria-label="available storage idicator">
+        <p>185 <span>GB LEFT</span></p>
+      </div>
+    </main>
+
+    <footer class="attribution" aria-label="author links">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        aria-label="author Fronted Mentor link"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://github.com/Joel252/Frontend-Mentor-Solutions/tree/master/Fylo%20data%20storage%20component%20master"
+        aria-label="author repository link"
+        >Joel Cruz</a
+      >.
+    </footer>
+  </body>
+</html>
