@@ -12,6 +12,8 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="stylesheet" href="styles/style.css" />
+
     <title>Frontend Mentor | Fylo data storage component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -29,36 +31,29 @@
     <header class="header">
       <h1>Fylo data storage</h1>
       <img class="logo" src="images/logo.svg" alt="fylo logo" />
-      <div class="options" aria-label="options">
-        <img
-          class="options__img"
-          src="#images/icon-document.svg"
-          alt="files option"
-        />
-        <img
-          class="options__img"
-          src="#images/icon-folder.svg"
-          alt="storage option"
-        />
-        <img
-          class="options__img"
-          src="#images/icon-upload.svg"
-          alt="upload option"
-        />
-      </div>
+      <section class="options" aria-label="options">
+        <h2>Options</h2>
+        <div class="option" aria-label="files option">
+          <img src="images/icon-document.svg" alt="files option icon" />
+        </div>
+        <div class="option" aria-label="storage option">
+          <img src="images/icon-folder.svg" alt="storage option icon" />
+        </div>
+        <div class="option" aria-label="upload option">
+          <img src="images/icon-upload.svg" alt="upload option icon" />
+        </div>
+      </section>
     </header>
 
     <main class="main">
-      <p class="storage-message" aria-label="storage used message">
-        You’ve used <strong>815 GB</strong> of your storage
-      </p>
-      <section class="storage-bar" aria-label="storage used bar">
-        <h2>Storage state info</h2>
-        <p>0 GB</p>
-        <p>1000 GB</p>
-      </section>
+      <h2>Storage state info</h2>
+      <p>You’ve used <b>815 GB</b> of your storage</p>
+      <div class="storage-bar" aria-label="storage used bar">
+        <div class="value-bar"></div>
+      </div>
+      <p class="values">0 GB<span>1000 GB</span></p>
       <div class="storage-indicator" aria-label="available storage idicator">
-        <p>185 GB <span>Left</span></p>
+        <p>185 <span>GB LEFT</span></p>
       </div>
     </main>
 
